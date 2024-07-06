@@ -17,6 +17,14 @@ Esto quiere decir que estamos dentro de nuestro entorno virtual
 > [!IMPORTANT]
 > Mover todos los archivos dentro de la carpeta que se creó *nombre_environment*
 
+## Correr Servidor 💻
+Ingresamos a la carpeta liga, una vez dentro ejecutamos
+```python
+py manage.py runserver
+```
+
+Esto nos abrirá nuestro servidor en la dirección http://127.0.0.1:8000/
+
 ## Crear Aplicación en Django
 Es una pagina web especifica de tu aplicacion, como el login, la pagina de inicio, registro, etc.
 Cada módulo se lo crea con el siguiente comando:
