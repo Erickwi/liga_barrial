@@ -1,0 +1,32 @@
+<!-- templates/dashboard/dashboard.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    <h2>Matches</h2>
+    <ul>
+    {% for match in matches %}
+        <li>{{ match.title }} - {{ match.date }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Results</h2>
+    <ul>
+    {% for result in results %}
+        <li>{{ result.match.title }} - Winner: {{ result.winner.username }} - Score: {{ result.score }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Players</h2>
+    <ul>
+    {% for player in players %}
+        <li>{{ player.user.username }} - Position: {{ player.position }} - Team: {{ player.team }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
